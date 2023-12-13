@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Facebook/static/css/main.81fc3571.css",
+    "main.js": "/Facebook/static/js/main.96e14334.js",
+    "static/js/787.38f16daf.chunk.js": "/Facebook/static/js/787.38f16daf.chunk.js",
+    "static/media/coverphoto1.jpg": "/Facebook/static/media/coverphoto1.fa716c186bfe97fd3e06.jpg",
+    "static/media/postImage1.jpg": "/Facebook/static/media/postImage1.df4a7e5b99487820ffb3.jpg",
+    "static/media/reelthumbnail1.jpg": "/Facebook/static/media/reelthumbnail1.2b519ec42cf727ea4670.jpg",
+    "static/media/reelthumbnail2.jpg": "/Facebook/static/media/reelthumbnail2.c65e09a41ff2ec028f81.jpg",
+    "static/media/reelthumbnail3.jpg": "/Facebook/static/media/reelthumbnail3.ec10019f9f89a1ff79b0.jpg",
+    "static/media/Profilepicture1.jpg": "/Facebook/static/media/Profilepicture1.118326c0b733d3708224.jpg",
+    "static/media/storiesThumbnail1.jpg": "/Facebook/static/media/storiesThumbnail1.20ce569a4ec37229707d.jpg",
+    "static/media/storiesThumbnail2.jpg": "/Facebook/static/media/storiesThumbnail2.9722fa6fa86867d0e950.jpg",
+    "static/media/likeIcon.svg": "/Facebook/static/media/likeIcon.4e0b8eddbd2c44eca436c99502024545.svg",
+    "static/media/loveIcon.svg": "/Facebook/static/media/loveIcon.79d3b9eb4e58e68449a89a70122991e6.svg",
+    "index.html": "/Facebook/index.html",
+    "main.81fc3571.css.map": "/Facebook/static/css/main.81fc3571.css.map",
+    "main.96e14334.js.map": "/Facebook/static/js/main.96e14334.js.map",
+    "787.38f16daf.chunk.js.map": "/Facebook/static/js/787.38f16daf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81fc3571.css",
+    "static/js/main.96e14334.js"
+  ]
+}
