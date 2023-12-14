@@ -131,7 +131,7 @@ export default function Topbar() {
        <div className="middleSectionTopbar">
         <ul>
             <Link to=""
-              className={isActiveLink('/') ? 'active' : ''}>
+              className={isActiveLink('') ? 'active' : ''}>
                 <div className="topbarMenuspacing">
                 <svg
                   viewBox="0 0 24 24"
