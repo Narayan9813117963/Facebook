@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import AppRoutes from './routes/AppRoutes';
+import Loginpage from './components/loginpage/loginpage';
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleLoginClick();
+    }
+  };
+
+  const handleLoginClick = () => {
+    setIsLoggedIn(true);
+  };
+
+  useEffect(() => {
+    document.addEventListener('keypress', handleKeyPress);
+    return () => {
+      document.removeEventListener('keypress', handleKeyPress);
+    };
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {isLoggedIn ? (
+        <AppRoutes/>
+      ) : (
+        <Loginpage onLogin={handleLogin} />
+      )}
+    </>
   );
 }
 
