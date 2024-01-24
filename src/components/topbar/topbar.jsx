@@ -40,7 +40,7 @@ export default function Topbar() {
         <div className="middleSectionTopbar">
           <ul>
             <Link
-              to=""
+              to="/"
               className={`${
                 isActiveLink("/") ? "active " : ""
               }responsiveTopbar`}
