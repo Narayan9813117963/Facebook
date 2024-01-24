@@ -141,18 +141,6 @@ li {
       }
     }
   }
-  @media screen and (max-width: 1100px) {
-    .topbarAll {
-      .middleSectionTopbar {
-        ul {
-          display: flex;
-          :link {
-            max-width: calc(15vw - 55px);
-          }
-        }
-      }
-    }
-  }
   @media (min-width: 1100px) and (max-height: 789px), (min-width: 1100px) and (max-width: 1379px){
   .topbarAll {
     .middleSectionTopbar {
@@ -189,6 +177,20 @@ li {
         ul {
           .responsiveTopbar {
             display: none;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .topbarAll {
+      .middleSectionTopbar {
+        ul {
+          display: flex;
+          :link {
+           .topbarMenuspacing{
+            width: fit-content !important;
+           }
           }
         }
       }

@@ -17,7 +17,8 @@ export default function Topbar() {
       <div className="topbarAll">
         <div className="leftSectionTopbar">
           <div className="logo">
-            <svg
+            <Link to="/Facebook">
+              <svg
               viewBox="0 0 36 36"
               fill="currentColor"
               height="40"
@@ -30,7 +31,8 @@ export default function Topbar() {
                 d="M13.651 35.471v-11.97H9.936V18h3.715v-2.37c0-6.127 2.772-8.964 8.784-8.964 1.138 0 3.103.223 3.91.446v4.983c-.425-.043-1.167-.065-2.081-.065-2.952 0-4.09 1.116-4.09 4.025V18h5.883l-1.008 5.5h-4.867v12.37a18.183 18.183 0 0 1-6.53-.399Z "
                 style={{ color: "#fff" }}
               ></path>
-            </svg>
+            </svg></Link>
+
           </div>
           <div className="searchInput">
             <IoMdSearch />
@@ -197,8 +199,8 @@ export default function Topbar() {
 
               </div>
             </Link>
-            <Link to="/gaming" className={`${
-                isActiveLink("/gaming") ? "active " : ""
+            <Link to="/bookmarks" className={`${
+                isActiveLink("/bookmarks") ? "active " : ""
               }responsiveIcon`}>
               <div className="topbarMenuspacing">
                 <svg

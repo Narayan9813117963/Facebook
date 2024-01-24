@@ -7,11 +7,12 @@ import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { friend, groupData } from "../../../my Data/friend";
 import notificationsData from "../../../my Data/notification";
 import { PiCaretRight } from "react-icons/pi";
+import Chatbox from "../../chatbox/chatbox";
+import { FiPlus } from "react-icons/fi";
 
 export default function Rightsectiontopbar({handleLogout}) {
     const [activeIndex, setActiveIndex] = useState(null);
   const wrapperRef = useRef(null);
-  
   const [selectedTab, setSelectedTab] = useState("inbox");
   const [selectedNotificationTab, setSelectedNotificationTab] = useState("all");
   const combinedData = [...friend, ...groupData];
@@ -126,13 +127,33 @@ export default function Rightsectiontopbar({handleLogout}) {
       ],
     },
   ];
+  const [selectedFriend, setSelectedFriend] = useState(null);
+  const [isChatboxOpen, setIsChatboxOpen] = useState(false);
+
+  const openChatbox = (friendId) => {
+    setSelectedFriend(friendId);
+    setIsChatboxOpen(true);
+  };
+
+  const closeChatbox = () => {
+    setSelectedFriend(null);
+    setIsChatboxOpen(false);
+  };
     
   return (
     <div className="rightSectionTopbar" ref={wrapperRef}>
     <ul className="rightSectionulDivider">
+    <li
+        className={`createIcon ${activeIndex === 1 ? "active" : ""}` }
+      >
+        <i>
+        <FiPlus />
+        </i>
+        <span style={{color:'#dbdada'}}>Create</span>
+      </li>
       <li
         onClick={() => handleOnClick(1)}
-        className={activeIndex === 1 ? "active" : ""}
+        className={`menuIcon ${activeIndex === 1 ? "active" : ""}` }
       >
         <i>
           <svg
@@ -275,8 +296,8 @@ export default function Rightsectiontopbar({handleLogout}) {
         </div>
       </div>
     </div>
-    <div className={`messengerWrapper ${activeIndex === 2 ? "active" : ""}`}
-      style={{ display: activeIndex === 2 ? "block" : "none" }}
+    <div className={`messengerWrapper ${activeIndex === 2 && !isChatboxOpen ? "active" : ""}`}
+        style={{ display: activeIndex === 2 && !isChatboxOpen ? "block" : "none" }}
     >
       <div className="messengerPosition">
         <div className="messengerHead">
@@ -341,7 +362,7 @@ export default function Rightsectiontopbar({handleLogout}) {
             <div className="inboxDiv">
               <ul>
                 {combinedData.map((data) => (
-                  <li key={data.id}>
+                  <li key={data.id} onClick={() => openChatbox(data.id)}>
                     <div className="chats">
                       <div className="smallimageThumbnail">
                         <img
@@ -362,7 +383,6 @@ export default function Rightsectiontopbar({handleLogout}) {
               </ul>
             </div>
           )}
-
           {selectedTab === "communities" && (
             <div className="communitiesDiv">this is communities</div>
           )}
@@ -565,6 +585,13 @@ export default function Rightsectiontopbar({handleLogout}) {
           </div>
       </div>
     </div>
+    {selectedFriend !== null && (
+          <Chatbox
+            friend={friend[selectedFriend - 1]}
+            closeChatbox={closeChatbox}
+          />
+        )}
   </div>
+  
   )
 }

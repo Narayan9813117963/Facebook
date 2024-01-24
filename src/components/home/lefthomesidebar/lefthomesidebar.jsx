@@ -5,7 +5,7 @@ import { IoChevronDown } from 'react-icons/io5';
 import Internshipleftsidebarlogo from '../../../asssets/internship left sidebar logo.jpg'
 import Ballpoollogo from '../../../asssets/8 ball pool logo.png'
 import { Link } from 'react-router-dom';
-export default function LeftHomeSidebar() {
+export default function LeftHomeSidebar( props) {
 const initialList = [
   { id: 'item1', name: 'Friends' },
   { id: 'item2', name: 'Memories', style: { backgroundPosition: '0px -444px' } },
@@ -42,7 +42,7 @@ const initialList = [
   };
 
   return (
-    <div className="leftSidebarWrapper">
+    <div className="leftSidebarWrapper" style={props.style}>
       <ul>
         <li>
           <div className="userImage">

@@ -3,6 +3,7 @@ import './videohome.scss';
 import { ImEarth } from 'react-icons/im';
 import { HiOutlineDotsHorizontal } from 'react-icons/hi';
 import videos from '../../../../../my Data/videos';
+import LikeBtn from '../../../../likebtn/likeBtn';
 
 export default function VideoHome() {
   return (
@@ -29,25 +30,18 @@ export default function VideoHome() {
           </div>
           <div className="videocontainer">
             <div className="video">
-              <video src={video.video}></video>
+              <video controls src={video.video}></video>
             </div>
           </div>
           <div className="commentlikescontainer">
             <div className="reactlinks">
-              <ul>
-              <li>
+              <ul className='videoLinkUl'>
+              <li className='videoLinkList'>
                         <div className="reactBtn">
-                            <i style={{ backgroundImage: 'url(https://static.xx.fbcdn.net/rsrc.php/v3/yl/r/OB3reRsjuUc.png)',
-                            backgroundPosition: '0px -718px',
-                            backgroundSize: 'auto',
-                            width: '20px',
-                            height: '20px',
-                            backgroundRepeat: 'no-repeat',
-                            display: 'inline-block'}}></i>
-                            Like
+                            <LikeBtn/>
                             </div>
                     </li>
-                    <li>
+                    <li className='videoLinkList'>
                         <div className="reactBtn">
                             <i style={{ backgroundImage: 'url(https://static.xx.fbcdn.net/rsrc.php/v3/yl/r/OB3reRsjuUc.png)',
                             backgroundPosition: '0px -529px',
@@ -59,7 +53,7 @@ export default function VideoHome() {
                             Comment
                             </div>
                     </li>
-                    <li>
+                    <li className='videoLinkList'>
                         <div className="reactBtn">
                             <i style={{ backgroundImage: 'url(https://static.xx.fbcdn.net/rsrc.php/v3/yl/r/OB3reRsjuUc.png)',
                             backgroundPosition: '0px -865px',

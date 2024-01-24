@@ -6,7 +6,7 @@ const Chatbox = ({ friend, closeChatbox }) => {
   
 
   return (
-    <div className="chatbox">
+    <div className="chatbox inboxChatbox">
       <div className="chatbox-header">
         <div className="friend-info">
           <div className="userImage">

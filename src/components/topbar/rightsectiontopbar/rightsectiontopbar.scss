@@ -10,6 +10,9 @@
       display: flex;
       gap: 8px;
       align-items: center;
+      .createIcon{
+        display: none;
+      }
       li {
         cursor: pointer;
         background-color: var(--comment-bg);
@@ -682,5 +685,14 @@
         }
       }
     }
-
+  }
+  @media screen and (max-width: 1100px) {
+    .rightSectionulDivider{
+    .createIcon{
+      display: block !important;
+    }
+    .menuIcon{
+      display: none;
+    }
+  }
   }

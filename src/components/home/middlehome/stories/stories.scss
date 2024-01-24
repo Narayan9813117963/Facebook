@@ -404,10 +404,48 @@
                 }
             }
             .storiesContents{
+                width: 100%;
+                overflow: hidden;
                 ul{
+                    justify-content: center;
+                    display: flex;
                     li{
                         &:nth-child(4){
                             display: none;
+                        }
+                        width: fit-content !important;
+                    }
+                    .slick-list{
+                        width: 365px !important;
+                        .slick-slide{
+                            width: 121px !important;
+                                &:first-child{
+                                    padding-right: 8px;
+                                    width: 118px !important;
+                                }
+                        }
+                    }
+                }
+            }
+                .reelsContents{
+                width: 100%;
+                overflow: hidden;
+                ul{
+                    justify-content: center;
+                    display: flex;
+                    li{
+                        &:nth-child(4){
+                            display: none;
+                        }
+                    }
+                    .slick-list{
+                        width: 365px !important;
+                        .slick-slide{
+                            width: 121px !important;
+                                &:first-child{
+                                    padding-right: 8px;
+                                    width: 118px !important;
+                                }
                         }
                     }
                 }
@@ -422,7 +460,13 @@
                 }
             }
         }
+
     }
    }
+
   }
-  
+  @media screen and (max-width: 700px){
+    .topbarAll .topbarBoxShadow{
+        bottom: -5px;
+    }
+  }

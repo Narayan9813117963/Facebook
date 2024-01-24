@@ -23,6 +23,7 @@ import Discover from '../components/topbar/middlenavbar/group/discover/discover'
 import Yourgroups from '../components/topbar/middlenavbar/group/yourgroups/yourgroups';
 import Playgames from '../components/topbar/middlenavbar/gaming/playgames/playgames';
 import Gamingnotification from '../components/topbar/middlenavbar/gaming/gamingnotification/gamingnotification';
+import LeftHomeSidebar from '../components/home/lefthomesidebar/lefthomesidebar';
 const AppRoutes = ({handleLogout}) => {
   return (
     <div className="routesWrapper">
@@ -54,6 +55,7 @@ const AppRoutes = ({handleLogout}) => {
             <Route path='' element={<Playgames/>}></Route>
             <Route path='notifications' element={<Gamingnotification/>}></Route>
           </Route>
+          <Route path= "/bookmarks" element={<LeftHomeSidebar style={{ display: 'block', width: "100%"} }/>}></Route>
         </Routes>
     </Router>
     <NewmessageBtn/>

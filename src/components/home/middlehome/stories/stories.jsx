@@ -48,7 +48,7 @@ export default function Stories() {
     prevArrow: <SamplePrevArrow />,
     responsive: [
         {
-            breakpoint: 460,
+            breakpoint: 500,
             settings: {
                 slidesToShow: 3,
             }
