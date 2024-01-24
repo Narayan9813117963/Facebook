@@ -29,7 +29,7 @@ const AppRoutes = ({handleLogout}) => {
     <Router>
       <Topbar handleLogout={handleLogout} />
       <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Facebook" element={<Home />} />
           <Route path="/video" element={<Video />}>
             <Route path="" element={<Videohome />} />
             <Route path="live" element={<Live />} />

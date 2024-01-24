@@ -40,9 +40,9 @@ export default function Topbar() {
         <div className="middleSectionTopbar">
           <ul>
             <Link
-              to="/"
+              to="/Facebook"
               className={`${
-                isActiveLink("/") ? "active " : ""
+                isActiveLink("/Facebook") ? "active " : ""
               }responsiveTopbar`}
             >
               <div className="topbarMenuspacing">
