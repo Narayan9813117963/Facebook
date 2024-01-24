@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Facebook/static/css/main.fc4bbe29.css",
-    "main.js": "/Facebook/static/js/main.d08e6ca1.js",
+    "main.css": "/Facebook/static/css/main.e5ab01c3.css",
+    "main.js": "/Facebook/static/js/main.0f01b900.js",
     "static/js/787.1262eb3f.chunk.js": "/Facebook/static/js/787.1262eb3f.chunk.js",
     "static/media/livevideo.png": "/Facebook/static/media/livevideo.8b5f58f78f02686f9f81.png",
     "static/media/video1.mp4": "/Facebook/static/media/video1.452272c8bbaf0880a869.mp4",
@@ -26,6 +26,7 @@
     "static/media/show2.jpg": "/Facebook/static/media/show2.79b8fa1912e5f42aaa15.jpg",
     "static/media/grouppost image3.jpg": "/Facebook/static/media/grouppost image3.ef207e81ff2d47e48662.jpg",
     "static/media/show1.1.jpg": "/Facebook/static/media/show1.1.3e2c2a388b531ca657a9.jpg",
+    "static/media/games.png": "/Facebook/static/media/games.fe2e426a63184a311b9d.png",
     "static/media/show1.8.jpg": "/Facebook/static/media/show1.8.3c687ec8613ac50ff43b.jpg",
     "static/media/show1.3.jpg": "/Facebook/static/media/show1.3.788655b075761062459c.jpg",
     "static/media/show1.7.jpg": "/Facebook/static/media/show1.7.546f7bd65ab0fbf35165.jpg",
@@ -56,12 +57,12 @@
     "static/media/loveIcon.svg": "/Facebook/static/media/loveIcon.79d3b9eb4e58e68449a89a70122991e6.svg",
     "static/media/slick.woff": "/Facebook/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Facebook/index.html",
-    "main.fc4bbe29.css.map": "/Facebook/static/css/main.fc4bbe29.css.map",
-    "main.d08e6ca1.js.map": "/Facebook/static/js/main.d08e6ca1.js.map",
+    "main.e5ab01c3.css.map": "/Facebook/static/css/main.e5ab01c3.css.map",
+    "main.0f01b900.js.map": "/Facebook/static/js/main.0f01b900.js.map",
     "787.1262eb3f.chunk.js.map": "/Facebook/static/js/787.1262eb3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc4bbe29.css",
-    "static/js/main.d08e6ca1.js"
+    "static/css/main.e5ab01c3.css",
+    "static/js/main.0f01b900.js"
   ]
 }
