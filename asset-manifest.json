@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Facebook/static/css/main.fc4bbe29.css",
-    "main.js": "/Facebook/static/js/main.9cc68de1.js",
+    "main.js": "/Facebook/static/js/main.d08e6ca1.js",
     "static/js/787.1262eb3f.chunk.js": "/Facebook/static/js/787.1262eb3f.chunk.js",
     "static/media/livevideo.png": "/Facebook/static/media/livevideo.8b5f58f78f02686f9f81.png",
     "static/media/video1.mp4": "/Facebook/static/media/video1.452272c8bbaf0880a869.mp4",
@@ -57,11 +57,11 @@
     "static/media/slick.woff": "/Facebook/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Facebook/index.html",
     "main.fc4bbe29.css.map": "/Facebook/static/css/main.fc4bbe29.css.map",
-    "main.9cc68de1.js.map": "/Facebook/static/js/main.9cc68de1.js.map",
+    "main.d08e6ca1.js.map": "/Facebook/static/js/main.d08e6ca1.js.map",
     "787.1262eb3f.chunk.js.map": "/Facebook/static/js/787.1262eb3f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fc4bbe29.css",
-    "static/js/main.9cc68de1.js"
+    "static/js/main.d08e6ca1.js"
   ]
 }
